@@ -44,6 +44,11 @@
     margin-top: 10px;
 }
 
+.button:hover {
+    background-color:#D8D8D8;
+    cursor: pointer;
+}
+
 .card-count {
   padding: 0;
   border: none;
