@@ -4,15 +4,15 @@
 
 .title {
     font-family: sans-serif monospace cursive;
-    color: brown;
+    color: #404040;
     margin-left: 43%;
 }
 
 
 .flash-card {
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     justify-content: center;
-    border: 1px solid brown;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 300px;
     width: 700px;
     margin-left: 25%;
