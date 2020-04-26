@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: sans-serif monospace cursive;
+    color: brown;
+    margin-left: 43%;
+}
+
+
+.flash-card {
+    background-color: antiquewhite;
+    justify-content: center;
+    border: 1px solid brown;
+    height: 300px;
+    width: 700px;
+    margin-left: 25%;
+    display: flex;
+}
+
+.flash-card-content {
+    font-size: 60px;
+    display: flex;
+    color: peru;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.card-flip {
+  margin-left: 50%;
+}
+
