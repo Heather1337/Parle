@@ -10,21 +10,33 @@
 
 
 .flash-card {
-    background-color: whitesmoke;
+    background-color: white;
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 300px;
-    width: 700px;
-    margin-left: 25%;
+    width: 600px;
+    margin-left: 30%;
     display: flex;
 }
 
+.flash-card:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
 .flash-card-content {
-    font-size: 60px;
+    font-size: 50px;
     display: flex;
     color: peru;
     text-align: center;
     padding-top: 10%;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 

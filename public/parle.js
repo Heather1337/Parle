@@ -1,13 +1,9 @@
 const flipButton = document.querySelector('.card-flip');
-const flashCard = document.querySelector('.flash-card-content');
+const flashCardWord = document.querySelector('.flash-card-content');
 const nextButton = document.querySelector('.next-card');
 const languageButton = document.querySelector('.choose-language');
+const flashCard = document.querySelector('.flash-card');
 
-
-//Handling Language Selection
-var languageEvent = document.getElementById("language-select");
-var  chosenLanguage = languageEvent.options[languageEvent.selectedIndex].text;
-console.log(chosenLanguage);
 
 
 let cardWord = '';
@@ -18,12 +14,8 @@ let cardWord = '';
 let currentCard = 0;
 let wordList = null;
 
-languageEvent.addEventListener("click", (e)=> {
-  console.log('clicked!', languageEvent.options[languageEvent.selectedIndex].value);
-});
 
 languageButton.addEventListener("click", (e) => {
-  console.log(chosenLanguage)
   fetch("/french")
     .then((res) => {
         return res.json();
@@ -36,13 +28,13 @@ languageButton.addEventListener("click", (e) => {
     })
 });
 
-flipButton.addEventListener("click", (e) => {
-  flashCard.innerText = wordList[currentCard].back;
+flashCard.addEventListener("click", (e) => {
+  flashCardWord.innerText = wordList[currentCard].back;
   currentCard++;
 });
 
 nextButton.addEventListener("click", (e) => {
-  flashCard.innerText = wordList[currentCard].front;
+  flashCardWord.innerText = wordList[currentCard].front;
 });
 
 
