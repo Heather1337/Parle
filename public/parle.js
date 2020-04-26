@@ -7,10 +7,6 @@ const flashCard = document.querySelector('.flash-card');
 
 
 let cardWord = '';
-// const wordList =[{'front': 'Bonjour', 
-// 'back': 'Hello'}, {'front': 'Au Revoir', 
-// 'back': 'Bye'},{'front': 'Merci',
-// 'back': 'Thank You'}]
 let currentCard = 0;
 let wordList = null;
 
@@ -22,6 +18,7 @@ languageButton.addEventListener("click", (e) => {
     })
     .then((words) => {
         wordList = words;
+        console.log(words);
     })
     .catch((err) => {
         console.log(err);
@@ -38,10 +35,6 @@ nextButton.addEventListener("click", (e) => {
 });
 
 
-// fetch('http:localhost:3000/french')
-//   .then((res)=> {
-//       console.log(res);
-// })
 
 
 

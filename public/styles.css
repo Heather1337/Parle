@@ -5,18 +5,24 @@
 .title {
     font-family: sans-serif monospace cursive;
     color: #404040;
-    margin-left: 43%;
 }
 
+.flash-card-container {
+  display: flex;
+  justify-content: center;
+}
 
 .flash-card {
     background-color: white;
-    justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 300px;
     width: 600px;
-    margin-left: 30%;
-    display: flex;
+    text-align: center;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
 }
 
 .flash-card:hover {
@@ -26,17 +32,24 @@
 
 .flash-card-content {
     font-size: 50px;
-    display: flex;
     color: peru;
-    text-align: center;
     padding-top: 10%;
 }
 
 .button-container {
+    align-content: space-between;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+}
+
+.card-count {
+  padding: 0;
+  border: none;
+  background: none;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
